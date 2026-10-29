@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spaceship Memory Card</title>
+
+  <!-- Menghubungkan file CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <main class="container">
+    <header>
+      <h1>🚀 Spaceship Memory</h1>
+      <p class="subtitle">
+        Temukan 10 pasangan objek luar angkasa!
+      </p>
+    </header>
+
+    <section class="info">
+      <div class="info-box">
+        <span>Langkah</span>
+        <strong id="moves">0</strong>
+      </div>
+
+      <div class="info-box">
+        <span>Pasangan</span>
+        <strong><span id="pairs">0</span>/10</strong>
+      </div>
+
+      <div class="info-box">
+        <span>Waktu</span>
+        <strong><span id="timer">0</span> detik</strong>
+      </div>
+    </section>
+
+    <section
+      class="game-board"
+      id="gameBoard"
+      aria-label="Papan permainan memory card"
+    ></section>
+
+    <button id="restartBtn" type="button">
+      🔄 Mulai Ulang
+    </button>
+
+    <p id="message" role="status" aria-live="polite"></p>
+  </main>
+
+  <!-- Menghubungkan file JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
